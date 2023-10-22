@@ -68,7 +68,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/test-two/**/*.ts", "apps/test-two/**/*.html"]
@@ -92,6 +92,15 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "test-two:build"
+      }
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/test-two/cypress.config.ts",
+        "testingType": "component",
+        "skipServe": true,
+        "devServerTarget": "test-two:build"
       }
     }
   }
