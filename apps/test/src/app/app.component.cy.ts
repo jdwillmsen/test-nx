@@ -1,5 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { mount } from 'cypress/angular';
 
 describe(AppComponent.name, () => {
   beforeEach(() => {
@@ -12,6 +13,6 @@ describe(AppComponent.name, () => {
   });
 
   it('renders', () => {
-    cy.mount(AppComponent);
+    mount(AppComponent);
   });
 });
