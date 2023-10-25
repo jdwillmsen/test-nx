@@ -29,6 +29,15 @@
           "libs/test-lib-one/**/*.html"
         ]
       }
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/test-lib-one/cypress.config.ts",
+        "testingType": "component",
+        "skipServe": true,
+        "devServerTarget": "test:build:4206"
+      }
     }
   }
 }
