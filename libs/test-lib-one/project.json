@@ -36,7 +36,7 @@
         "cypressConfig": "libs/test-lib-one/cypress.config.ts",
         "testingType": "component",
         "skipServe": true,
-        "devServerTarget": "test:build:4206"
+        "devServerTarget": "test:build"
       }
     }
   }
