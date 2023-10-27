@@ -19,6 +19,5 @@
       "@org/test-lib-two": ["libs/test-lib-two/src/index.ts"]
     }
   },
-  "exclude": ["node_modules",
-    "tmp"]
+  "exclude": ["node_modules", "tmp"]
 }
