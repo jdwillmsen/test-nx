@@ -1,1 +1,5 @@
-* text=auto
+# Set all files to use LF (Unix-like) line endings
+* text=auto eol=lf
+
+# Explicitly specify that tsconfig.base.json should use LF
+tsconfig.base.json text eol=lf
